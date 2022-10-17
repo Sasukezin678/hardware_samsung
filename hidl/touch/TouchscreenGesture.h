@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2022 The LineageOS Project
+ * Copyright (C) 2019 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-#pragma once
+#ifndef VENDOR_LINEAGE_TOUCH_V1_0_TOUCHSCREENGESTURE_H
+#define VENDOR_LINEAGE_TOUCH_V1_0_TOUCHSCREENGESTURE_H
 
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
 #include <vendor/lineage/touch/1.0/ITouchscreenGesture.h>
-#include "samsung_touch.h"
 
 namespace vendor {
 namespace lineage {
@@ -60,3 +60,5 @@ class TouchscreenGesture : public ITouchscreenGesture {
 }  // namespace touch
 }  // namespace lineage
 }  // namespace vendor
+
+#endif  // VENDOR_LINEAGE_TOUCH_V1_0_TOUCHSCREENGESTURE_H
